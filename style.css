@@ -343,8 +343,9 @@ form button{
       background-image: url(./imgs/med-spa-logo.png);
       background-size: cover;
       background-position: center;
-      height: 200px;
+      height: 40px;
       width: 200px;
+      background-color: aliceblue;
   }
 
 .footerItem P{

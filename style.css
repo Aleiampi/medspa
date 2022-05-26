@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gainsboro;
+    color: darkslategrey;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Tiro Tamil', serif;    fuente con serif*/
+}
+
+header{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+/* rosa #ffafa4
+rgb 255, 175, 164
+texto #00505b */
+
+#logoNav{
+    height: 150px;
+    margin: auto;
+}
+
+nav{
+    /* width: 100%; */
+    margin: auto;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: indianred;
+    /* font-size: 24px; */
+    font-weight: bold;
+    margin: 20px;
+}
+
+/*********************BANNER*****************************/
+
+#bannerIntro{
+    background-image: url(./imgs/chris-jarvis-0Pf7fKRtDPI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    animation: fadeIn 4s;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+  }
+
+#infoBanner{
+    background-color:rgba(255, 231, 228, 0.9);
+    width: 75%;
+    max-width: 900px;
+    /* height: 50%; */
+    min-height: 50%;
+    border-radius: 10px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.bannerItem{
+    width: 45%;
+    min-width: 300px;
+    margin: 20px;
+    color: #00505b;
+    padding: 50px, 20px;
+}
+
+.bannerItem h2{
+    font-family: 'Tiro Tamil', serif;
+    font-style: italic;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.bannerItem button{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #00505b;
+  border-radius: 15px;
+  /* box-sizing: border-box; */
+  color: #00505b;
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
+  /* font-size: 16px; */
+  /* font-weight: 600; */
+  /* line-height: normal; */
+  margin: 0;
+  min-height: 60px;
+  /* min-width: 0; */
+  /* outline: none; */
+  padding: 16px 24px;
+  text-align: center;
+  /* text-decoration: none; */
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  /* user-select: none; */
+  /* -webkit-user-select: none; */
+  /* touch-action: manipulation; */
+  width: 100%;
+  will-change: transform;
+}
+
+.bannerItem button:disabled {
+  pointer-events: none;
+}
+
+.bannerItem button:hover {
+  color: #fff;
+  background-color: #00505b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.bannerItem button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/****************TRATAMIENTOS***********************/
+#tratamientos{
+    width: 75%;
+    max-width: 900px;
+    margin: auto;
+}
+
+#tratamientos h2{
+    text-align: center;
+    margin: 40px;
+}
+
+#tratamientosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.tratamiento{
+    width: 45%;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align:justify;
+    border: 1px solid #99b9bd;
+    border-radius: 5%;
+    /* box-shadow: 10px 10px 5px 0px rgba(153,185,189,0.44); */
+}
+
+.tratamiento:hover{
+    box-shadow: 10px 10px 5px 0px rgba(153,185,189,0.44);
+}
+
+.tratamiento h3{
+    font-family: 'Tiro Tamil', serif;
+    margin: 20px;
+}
+
+#tratamiento1{
+    width: 100%;
+    height: 250px;
+    background-image: url(./imgs/raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+#tratamiento2{
+    width: 100%;
+    height: 250px;
+    background-image: url(./imgs/conscious-design-ubeslMfS1lk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+#tratamiento3{
+    width: 100%;
+    height: 250px;
+    background-image: url(./imgs/karelys-ruiz-PqyzuzFiQfY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+#tratamiento4{
+    width: 100%;
+    height: 250px;
+    background-image: url(./imgs/rune-enstad-qeuJczNo54w-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+/**********************NOSOTROS*******************/
+
+#nosotros{
+    background-color: rgba(255, 175, 164, 1);
+    padding: 20px;
+}
+
+#nosotros h2{
+    font-family: 'Tiro Tamil', serif;
+    margin: 20px;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#nosotrosContainer{
+    width: 75%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nosotrosItem{
+    width: 45%;
+    min-width: 300px;
+    margin: 20px;
+    color: #00505b;
+    padding: 50px, 20px;
+}
+
+#nosotrosImagen{
+    min-width: 300px;
+    height: 300px;
+    background-image: url(./imgs/esthetician-marketing-ideas.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+/*****************CONTACTO****************/
+#contacto{
+ margin: auto;
+ max-width: 1024px;
+ padding: 10%;
+}
+
+#contacto h2{
+    font-family: 'Tiro Tamil', serif;
+    margin: 20px;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#contactoConteiner{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contactoItem{
+    width: 45%;
+    min-width: 300px;
+    color: #00505b;
+}
+
+input{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+form button{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #00505b;
+    border-radius: 15px;
+    color: #00505b;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 10px;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    will-change: transform;
+  }
+  
+  form button:disabled {
+    pointer-events: none;
+  }
+  
+  form button:hover {
+    color: #fff;
+    background-color: #00505b;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  form button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  /***********FOOTER***************/
+
+  footer{
+    background-color: rgba(255, 175, 164, 1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+ .footerItem{
+      width: 200px;
+  }
+
+  #logoFooter{
+      background-image: url(./imgs/logo.JPG);
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 200px;
+  }
+
+.footerItem P{
+    font-size: 14px;
+}
+
+.footerItem a{
+    text-decoration: none;
+    color: #00505b;
+}
+
+.footerItem a:hover{
+    font-weight: bold;
+}
+
+

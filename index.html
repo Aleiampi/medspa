@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de estetica Bella</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,300&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <img src="./imgs/med-spa-logo.png" alt="LOGO" id="logoNav">
+        <nav>
+            <a href="#tratamientos">Tratamientos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="bannerIntro" class="fadeIn">
+        <!-- banner con foto y boton de reservas a lleva a contacto -->
+        <div id="infoBanner">
+            <!-- contenedor de texto y boton -->
+            <div  class="bannerItem">
+                <h2>Bienvenidos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eligendi.</p>
+            </div>
+            <div  class="bannerItem">
+                 <a href="#contacto"><button>RESERVAS</button></a> 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+         
+
+        </div>
+        <!-- V icono flecha -->
+    </section>
+
+    <section id="tratamientos">
+        <h2>Tratamientos</h2>
+        <!-- tratamientos -->
+        <div id="tratamientosContainer">
+            <div class="tratamiento" >
+                <div id="tratamiento1"></div>
+                <h3>Tratamiento 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
+            </div>
+            <div class="tratamiento">
+                <div id="tratamiento2"></div>
+                <h3>Tratamiento 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
+            </div>
+            <div class="tratamiento">
+                <div id="tratamiento3"></div>
+                <h3>Tratamiento 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
+            </div>
+            <div  class="tratamiento">
+                <div id="tratamiento4"></div>
+                <h3>Tratamiento 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="nosotros">
+        <h2>Nosotros</h2>
+        <div id="nosotrosContainer">
+            <!--contenedor flex -->
+            <div class="nosotrosItem" id="nosotrosImagen">
+                
+            </div>
+            <div  class="nosotrosItem" id="nosotrosTexto">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quibusdam commodi magni corrupti. Consectetur iure, unde, adipisci odit aperiam iste at ipsam quo laudantium cum
+                    possimus quae sunt veniam sit.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacto"> 
+        <h2>Contacto</h2>
+
+        <div id="contactoConteiner"><!--contenedor flex -->
+            <form action="#" class="contactoItem">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"> 
+                <br>
+
+                <label for="mensaje">Mensaje:</label> <br>
+                <textarea name="mensaje" rows="10" cols="30">
+                    
+                </textarea>
+                <br>
+                <button type="button" onclick="alert('Mensaje enviado!')">Enviar</button>
+            </form>
+            <div class="contactoItem">
+                <!--contenedor flex -->
+                <div>
+                    <p>telefono 123-456-7890</p>
+                    <p>email bellaestetica@email.com</p>
+                    <p>Calle 1 #234</p>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+                <div style="width: auto"><iframe width="100%" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Bella%20Spa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">bike gps</a></iframe></div>
+
+                <!-- <div>
+                     <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">map html code</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div> -->
+                    <!--  <div style="width: 100%"><iframe width="100%" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Bella%20Spa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">bike gps</a></iframe></div>
+                </div> -->
+    
+            </div>    
+
+        </div>
+
+
+
+
+       
+    </section>
+
+    <footer>
+        <div id="logoFooter" class="footerItem">
+            <!-- <img src="./imgs/logo.JPG" alt="LOGO"> -->
+        </div>
+        <div class="footerItem">
+            <h4>TRATAMIENTOS</h4>
+            <a href="#tratamiento1">Tratamiento 1</a>
+            <a href="#tratamiento2">Tratamiento 2</a>
+            <a href="#tratamiento3">Tratamiento 3</a>
+            <a href="#tratamiento4">Tratamiento 4</a>
+        </div>
+        <div class="footerItem">
+            <h4>CONTACTO</h4>
+            <p>telefono 123-456-7890</p>
+            <p>email bellaestetica@email.com</p>
+            <p>Calle 1 #234</p>
+            <p>Buenos Aires, Argentina</p>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

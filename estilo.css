@@ -14,6 +14,7 @@ body{
 header{
     background-color: whitesmoke;
     display: flex;
+    flex-direction: column;
 }
 
 /* rosa #ffafa4
@@ -21,152 +22,20 @@ rgb 255, 175, 164
 texto #00505b */
 
 #logoNav{
-    width: 80vw;
+    height: 150px;
     margin: auto;
 }
 
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    background: black;
-    z-index: -1;
+nav{
+    margin: auto;
+    text-decoration: none;
 }
 
-#main-menu {
-  display: block;
-  height: 100px;
-  width: 100%;
-  background: #ffafa4;
-  margin: 0px;  
-  z-index: 9;
-}
-
-#main-menu ul {
-  max-width: 800px;
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  padding: 0px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 9;
-}
-
-#main-menu li {
-  list-style-type: none;
-  font-size: 2rem;
-}
-
-#main-menu a {
-  color: #00505b;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-#main-menu a:hover {
-  text-decoration: underline;
-}
-
-#hamburger-input{
-  display: none;
-}
-
-#hamburger-menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    display: none;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    background: linear-gradient(
-      to bottom, 
-      #ffafa4, #ffafa4 20%, 
-      white 20%, white 40%, 
-      #ffafa4 40%, #ffafa4 60%, 
-      white 60%, white 80%, 
-      #ffafa4 80%, #ffafa4 100%
-    );
-}
-
-#hamburger-menu #sidebar-menu {
-    visibilty: hidden;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: 100%;
-    background-color: #ffafa4;
-    transition: 0.3s;
-    padding: 0px 10px;
-    box-sizing: border-box;
-}
-
-#hamburger-menu h3 {
-  color: #00505b;
-  font-size: 2.2rem;
-}
-
-#hamburger-menu ul {
-  padding-left: 0px;
-}
-
-#hamburger-menu li {
-  list-style-type: none;
-  line-height: 3rem;
-}
-
-#hamburger-menu a {
-  color: #00505b;
-  font-size: 1.3rem;
-  text-decoration: none;
-}
-
-#hamburger-menu a:hover {
-  text-decoration: underline;
-}
-
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
-    visibility: visible;
-    left: 0;
-}
-#hamburger-input:checked ~ .overlay{
-   visibility: visible;
-  opacity: 0.4;
-}
-
-
-@media screen and (max-width: 640px) {  
-  #main-menu {
-    display: none;
-  }
-  #hamburger-menu {
-    display: inline;
-  }
-}
-
-@media screen and (min-width: 640px) {
-    header{
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #logoNav{
-        height: 150px; 
-        width: auto;
-        margin: auto;
-    }
+nav a{
+    text-decoration: none;
+    color: indianred;
+    font-weight: bold;
+    margin: 20px;
 }
 
 /*********************BANNER*****************************/
@@ -195,15 +64,19 @@ texto #00505b */
 
 #infoBanner{
     background-color:rgba(255, 231, 228, 0.9);
+    width: 75%;
     max-width: 900px;
+    min-height: 50%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .bannerItem{
+    width: 45%;
     min-width: 300px;
     margin: 20px;
     color: #00505b;
@@ -213,10 +86,8 @@ texto #00505b */
 .bannerItem h2{
     font-family: 'Tiro Tamil', serif;
     font-style: italic;
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .bannerItem button{
@@ -234,7 +105,6 @@ texto #00505b */
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
   width: 100%;
   will-change: transform;
-  margin-bottom: 20px;
 }
 
 .bannerItem button:disabled {
@@ -255,7 +125,7 @@ texto #00505b */
 
 /****************TRATAMIENTOS***********************/
 #tratamientos{
-    width: 80%;
+    width: 75%;
     max-width: 900px;
     margin: auto;
 }
@@ -270,11 +140,11 @@ texto #00505b */
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
-    align-items: center;
 }
 
 .tratamiento{
-    min-width: 280px;
+    width: 45%;
+    min-width: 300px;
     max-width: 400px;
     padding: 25px;
     margin-bottom: 30px;
@@ -292,12 +162,9 @@ texto #00505b */
     margin: 20px;
 }
 
-.tratamientoCard{
+#tratamiento1{
     width: 100%;
     height: 250px;
-}
-#tratamiento1{
-
     background-image: url(./imgs/raphael-lovaski-Pe9IXUuC6QU-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -305,7 +172,8 @@ texto #00505b */
 }
 
 #tratamiento2{
-
+    width: 100%;
+    height: 250px;
     background-image: url(./imgs/conscious-design-ubeslMfS1lk-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -313,7 +181,8 @@ texto #00505b */
 }
 
 #tratamiento3{
-
+    width: 100%;
+    height: 250px;
     background-image: url(./imgs/karelys-ruiz-PqyzuzFiQfY-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -321,44 +190,12 @@ texto #00505b */
 }
 
 #tratamiento4{
-
+    width: 100%;
+    height: 250px;
     background-image: url(./imgs/rune-enstad-qeuJczNo54w-unsplash.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 5%;
-}
-
-@media screen and (min-width: 480px) {
-    .tratamiento{
-        width: 100%;
-        padding: 25px;
-        margin-bottom: 30px;
-        text-align:justify;
-        border: 1px solid #99b9bd;
-        border-radius: 5%;
-    }
-}
-
-@media screen and (min-width: 640px){
-    .tratamiento{
-        max-width: 200px;
-        padding: 25px;
-        margin-bottom: 30px;
-        text-align:justify;
-        border: 1px solid #99b9bd;
-        border-radius: 5%;
-    }
-}
-
-@media screen and (min-width: 760px) {
-    .tratamiento{
-        max-width: 400px;
-        padding: 25px;
-        margin-bottom: 30px;
-        text-align:justify;
-        border: 1px solid #99b9bd;
-        border-radius: 5%;
-    }
 }
 
 /**********************NOSOTROS*******************/
@@ -403,7 +240,6 @@ texto #00505b */
     border-radius: 5%;
 }
 
-
 /*****************CONTACTO****************/
 #contacto{
  margin: auto;
@@ -433,11 +269,6 @@ texto #00505b */
     color: #00505b;
 }
 
-#contactoInfo{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 input{
     width: 100%;
 }
@@ -454,7 +285,7 @@ form button{
     color: #00505b;
     cursor: pointer;
     display: inline-block;
-    margin: 10px;
+    margin: 0;
     padding: 10px 10px;
     text-align: center;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -481,64 +312,36 @@ form button{
 
   footer{
     background-color: rgba(255, 175, 164, 1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+ .footerItem{
+      width: 200px;
   }
 
   #logoFooter{
-    background-image: url(./imgs/med-spa-logo.png);
-    background-size: cover;
-    background-position: center;
-    height: 40px;
-    width: 200px;
-    margin: auto;
-    background-color: aliceblue;
+      background-image: url(./imgs/med-spa-logo.png);
+      background-size: cover;
+      background-position: center;
+      height: 40px;
+      width: 200px;
+      background-color: aliceblue;
   }
 
-  .footerItem{
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-      padding: 10px;
-  }
+.footerItem P{
+    font-size: 14px;
+}
 
-  .footerItem a{
+.footerItem a{
     text-decoration: none;
     color: #00505b;
 }
 
 .footerItem a:hover{
     font-weight: bold;
-}
-
-.footerItem P{
-    font-size: 14px;
-}    
-@media screen and (min-width: 640px) {
-    footer{
-        background-color: rgba(255, 175, 164, 1);
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }    
-    .footerItem{
-        width: 200px;
-    } 
-
-    #logoFooter{
-        background-image: url(./imgs/med-spa-logo.png);
-        background-size: cover;
-        background-position: center;
-        height: 40px;
-        width: 200px;
-        margin: 20px;
-        background-color: aliceblue;
-    }
-}
-
-@media screen and (min-width: 920px){
-    footer{
-        justify-content: center;
-    }
 }
 
 

@@ -15,11 +15,36 @@
 <body>
     <header>
         <img src="./imgs/med-spa-logo.png" alt="LOGO" id="logoNav">
-        <nav>
+        <!-- <nav>
             <a href="#tratamientos">Tratamientos</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
-        </nav>
+        </nav> -->
+        
+
+<nav id="main-menu">
+    <ul>
+      <li><a href="#tratamientos">Tratamientos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <input type="checkbox" id="hamburger-input" class="burger-shower" />
+  <label id="hamburger-menu" for="hamburger-input">
+    <nav id="sidebar-menu">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#tratamientos">Tratamiento</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </label>
+  
+  <div class="overlay"></div>
+  
+  
     </header>
 
     <section id="bannerIntro" class="fadeIn">
@@ -46,22 +71,22 @@
         <!-- tratamientos -->
         <div id="tratamientosContainer">
             <div class="tratamiento" >
-                <div id="tratamiento1"></div>
+                <div id="tratamiento1" class="tratamientoCard"></div>
                 <h3>Tratamiento 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
             </div>
             <div class="tratamiento">
-                <div id="tratamiento2"></div>
+                <div id="tratamiento2" class="tratamientoCard"></div>
                 <h3>Tratamiento 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
             </div>
             <div class="tratamiento">
-                <div id="tratamiento3"></div>
+                <div id="tratamiento3" class="tratamientoCard"></div>
                 <h3>Tratamiento 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
             </div>
             <div  class="tratamiento">
-                <div id="tratamiento4"></div>
+                <div id="tratamiento4" class="tratamientoCard"></div>
                 <h3>Tratamiento 4</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta ab delectus voluptas nihil culpa recusandae quas saepe corrupti qui pariatur mollitia et explicabo ipsa.</p>
             </div>
@@ -107,10 +132,10 @@
             </form>
             <div class="contactoItem">
                 <!--contenedor flex -->
-                <div>
-                    <p>telefono 123-456-7890</p>
-                    <p>email bellaestetica@email.com</p>
-                    <p>Calle 1 #234</p>
+                <div id="contactoInfo">
+                    <p>Telefono: 123-456-7890</p>
+                    <p>Email: bellaestetica@email.com</p>
+                    <p>Dirección: Calle 1 #234</p>
                     <p>Buenos Aires, Argentina</p>
                 </div>
                 <div style="width: auto"><iframe width="100%" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Bella%20Spa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">bike gps</a></iframe></div>
@@ -136,10 +161,16 @@
         </div>
         <div class="footerItem">
             <h4>TRATAMIENTOS</h4>
-            <a href="#tratamiento1">Tratamiento 1</a>
-            <a href="#tratamiento2">Tratamiento 2</a>
-            <a href="#tratamiento3">Tratamiento 3</a>
-            <a href="#tratamiento4">Tratamiento 4</a>
+            <ul>
+                <li> <a href="#tratamiento1">Tratamiento 1</a></li>
+                <li><a href="#tratamiento2">Tratamiento 2</a></li>
+                <li> <a href="#tratamiento3">Tratamiento 3</a></li>
+                <li><a href="#tratamiento4">Tratamiento 4</a></li>
+            </ul>
+           
+            
+           
+  
         </div>
         <div class="footerItem">
             <h4>CONTACTO</h4>
